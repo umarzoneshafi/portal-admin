@@ -1,0 +1,175 @@
+﻿@import "../abstracts/_colors.scss";
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/_links.scss";
+
+/* Begin: User Card Default */
+.user-card-default {
+    width:100%;
+    height:auto;
+    background-color:$c-white;
+}
+
+.user-card-default .user-details {
+    background-color: white;
+    padding: 10px;
+    height: auto;
+    font-size:14px;
+    border-left: 1px solid $c-grey-2;
+}
+
+.user-card-default .content {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.user-card-default .category-strip {
+    background-color: $c-grey-6;
+    padding: 3px 10px 3px 10px;
+    width: 100%;
+}
+
+.user-card-default .location-strip {
+    padding:10px;
+    border-bottom: 1px solid $c-grey-7 !important;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+@media (max-width: 320px) {
+    .user-card-default .location-strip {
+        text-align:center;
+        padding: 10px;
+        border-bottom: 1px solid $c-grey-7 !important;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap:2px;
+    }
+
+    .user-card-default .category-strip {
+        text-align: center;
+        background-color: $c-grey-6;
+        padding: 3px 10px 3px 10px;
+        width: 100%;
+    }
+
+    .user-card-default .content {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 12fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2px;
+    }
+
+    .user-card-default .content .img-65-circle {
+        width: 32px !important;
+        height: 32px !important;
+    }
+}
+/* End: User Card Default */
+
+/* Begin: Product Card Default */
+.product-card-default {
+    background-color:$c-white;
+    text-align:center;
+}
+
+.product-card-default .slider{
+    width:auto;
+    height:310px;
+    margin:10px;
+}
+
+.product-card-default .slider img {
+    object-fit: cover;
+    width:100%;
+    height:310px;
+}
+
+.product-card-default .content {
+    padding:0px 10px 0px 10px;
+}
+
+.product-card-default .button-container {
+    padding: 10px;
+    text-align:center !important;
+    border-top:1px solid $c-grey-7;
+}
+/* End: Product Card Default */
+
+/* Begin: Company Card Default */
+.company-card-default {
+    width: 100%;
+    height: auto;
+    background-color: $c-white;
+    padding:0px 0px 5px 0px;
+}
+
+.company-card-default .photo {
+    margin:10px 0px 10px 10px;
+    border:1px solid $c-grey-5;
+}
+
+.company-card-default .photo img {
+    width:auto;
+    height:110px;
+    object-fit:contain;
+}
+
+.company-card-default .content {
+    margin:10px 0px 10px 0px;
+    width:100%;
+}
+
+.company-card-default .content .logo-and-seal {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 2px;
+}
+
+.company-card-default .category-strip {
+    padding:5px 10px 5px 10px;
+    background-color:$c-grey-6;
+    width:100%;
+}
+/* End: Company Card Default */
+
+/* Begin: Gallery Card */
+.card-gallery-i {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.card-holder {
+    padding: 10px;
+    text-align: center;
+    background-color: $c-white;
+}
+
+.card-holder img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-holder .title {
+    margin-top: 10px;
+}
+
+.card-holder .title::before {
+    content: "\A";
+}
+/* End: Gallery Card */

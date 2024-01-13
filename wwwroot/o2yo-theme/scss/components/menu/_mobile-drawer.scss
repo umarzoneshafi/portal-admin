@@ -1,0 +1,65 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initial position outside the viewport */
+    width: 110px;
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto;
+    background-color: $c-white;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 10999;
+}
+
+.mobile-drawer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-drawer li {
+    padding: 5px;
+}
+
+.mobile-drawer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 10px;
+}
+
+.mobile-drawer.open {
+    left: 0; /* Move the drawer to the left to show it */
+}
+
+.mobile-drawer .icon-holder {
+    width: 100px;
+    padding:10px;
+}
+
+.mobile-drawer .icon-holder img:hover {
+    height: 35px;
+    animation: move 1s ease-in-out infinite;
+}
+
+.mobile-drawer .icon-holder img {
+    height: 35px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mobile-drawer .icon-holder img::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.mobile-drawer .icon-holder span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px !important;
+}

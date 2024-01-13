@@ -1,0 +1,31 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.search-input {
+    height: 35px;
+    width: 300px;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 2px solid $c-blue-default;
+    border-right: 0px solid $c-blue-default;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-btn {
+    height: 35px;
+    width: auto;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 0px solid $c-blue-default;
+    border-right: 2px solid $c-blue-default;
+    border-radius: 0px 5px 5px 0px;
+    padding: 2px;
+    margin-left: -20px;
+}

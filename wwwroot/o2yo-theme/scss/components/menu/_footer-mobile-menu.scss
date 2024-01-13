@@ -1,0 +1,50 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.footer-mobile-menu {
+    display: none;
+    background-color: $c-white;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-left:-10px !important;
+}
+
+.footer-mobile-menu a {
+    text-decoration: none;
+    color: #585858;
+    font-size:13px;
+}
+
+.footer-mobile-menu a:hover {
+    text-decoration: none;
+    color: #014FE5;
+    font-size: 13px;
+}
+
+.footer-mobile-menu img {
+    height:25px;
+}
+
+.footer-mobile-menu img::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.footer-mobile-menu span {
+    display: block;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
+    .footer-mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -10px !important;
+    }
+}
